@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+body {
+    background: #f5f4f4;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo img {
+    width: 140px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff85bc;
+}
+
+nav a.active {
+    color: #ff85bc;
+}
+
+nav button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* HERO */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 80px;
+    position: relative;
+}
+
+.hero-text {
+    width: 50%;
+    position: relative;
+}
+
+.linea {
+    position: absolute;
+    left: -25px;
+    top: 80px;
+    width: 2px;
+    height: 65px;
+    background: black;
+}
+
+.hero-text h1 {
+    font-size: 85px;
+    line-height: 1;
+}
+
+.negro {
+    color: black;
+    font-weight: 700;
+}
+
+.rosa {
+    color: #ff7eb8;
+    font-weight: 700;
+}
+
+.hero-text h2 {
+    color: #f56b2c;
+    font-size: 65px;
+    margin-top: 10px;
+}
+
+.hero-text p {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* IMAGEN HERO */
+
+.hero-image {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.blob {
+    position: absolute;
+    width: 380px;
+    height: 280px;
+    background: #DED1F9;
+    border-radius: 50%;
+    top: 30px;
+    z-index: 1;
+}
+
+.hero-image img {
+    width: 500px;
+    position: relative;
+    z-index: 2;
+}
+
+/* WAVE */
+
+.wave-divider {
+    width: 100%;
+    height: 120px;
+    background-image: url('../img/Asset 7.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: bottom;
+    background-color: #f5f4f4;
+    margin-top: 30px;
+}
+/* FEATURES */
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 80px 60px;
+    text-align: center;
+    background: white;
+    margin-top: -5px;
+    position: relative;
+    z-index: 2;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    width: 95px;
+    height: 95px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img {
+    width: 55px;
+}
+
+.pink {
+    background: #ffb6c9;
+}
+
+.beige {
+    background: #f4e6d0;
+}
+
+.lilac {
+    background: #dcd0ff;
+}
+
+.softpink {
+    background: #ffe3ea;
+}
+
+.feature h3 {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 600;
+}

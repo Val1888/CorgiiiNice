@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorgiiNice</title>
+    <link rel="stylesheet" href="style/estilo.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            <img src="img/logobien.png" alt="Logo">
+        </div>
+
+        <nav>
+    <a href="#" class="nav-link active">HOME</a>
+    <a href="sobremi.html" class="nav-link">SOBRE MI</a>
+    <a href="portafolio.html" class="nav-link">PORTAFOLIO</a>
+    <a href="tienda.html" class="nav-link">TIENDA</a>
+    <button>HABLEMOS</button>
+</nav>
+</header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+
+            <div class="linea"></div>
+
+            <h1>
+                <span class="negro">CORGii</span><span class="rosa">NiCE</span>
+            </h1>
+
+            <h2>¿Quiénes somos?</h2>
+
+            <p>
+                Diseño digital, bonitas y funcionales que<br>
+                conectan con marcas personales
+            </p>
+        </div>
+
+        <div class="hero-image">
+            <div class="blob"></div>
+            <img src="img/Asset 6.png" alt="Corgi">
+        </div>
+    </section>
+
+    <!-- NUBES -->
+    <div class="wave-divider"></div>
+    <!-- CARDS -->
+    <section class="features">
+
+        <div class="feature">
+            <div class="icon pink">
+                <img src="img/color-palette.png" alt="">
+            </div>
+            <h3>COMISIONES</h3>
+        </div>
+
+        <div class="feature">
+            <div class="icon beige">
+                <img src="img/idea.png" alt="">
+            </div>
+            <h3>PROTOTIPADO</h3>
+        </div>
+
+        <div class="feature">
+            <div class="icon lilac">
+                <img src="img/web-design (1).png" alt="">
+            </div>
+            <h3>CREATIVIDAD</h3>
+        </div>
+
+        <div class="feature">
+            <div class="icon softpink">
+                <img src="img/award.png" alt="">
+            </div>
+            <h3>METAS CLARAS</h3>
+        </div>
+
+    </section>
+
+    <script>
+    const links = document.querySelectorAll('.nav-link');
+
+    links.forEach(link => {
+        link.addEventListener('click', function () {
+            links.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+</script>
+
+</body>
+</html>
