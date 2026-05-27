@@ -199,3 +199,628 @@ nav button {
     font-size: 22px;
     font-weight: 600;
 }
+
+/* COOKIES */
+
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 900px;
+
+    background: white;
+    border-radius: 20px;
+
+    padding: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+
+    z-index: 999;
+}
+
+.cookie-text h3 {
+    color: #ff7eb8;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.cookie-text p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-aceptar {
+    background: #ff7eb8;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-rechazar {
+    background: #ececec;
+    color: black;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* PORTAFOLIO */
+
+.portafolio {
+    width: 100%;
+    padding: 60px 80px;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.card-portafolio {
+    width: 350px;
+}
+
+.card-portafolio img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+
+    transition: 0.3s;
+}
+
+.card-portafolio img:hover {
+    transform: scale(1.03);
+}
+
+.card-portafolio h2 {
+    margin-top: 20px;
+    font-size: 28px;
+    color: black;
+}
+
+.card-portafolio p {
+    margin-top: 15px;
+
+    font-size: 18px;
+    line-height: 1.6;
+
+    color: #222;
+}
+
+/* SOBRE MI */
+
+.sobre-mi {
+    width: 100%;
+    padding: 40px 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.sobre-texto {
+    width: 55%;
+}
+
+.sobre-texto h1 {
+    font-size: 95px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.sobre-texto p {
+    font-size: 22px;
+    line-height: 1.6;
+    color: #3a1d12;
+
+    margin-bottom: 28px;
+
+    font-weight: 600;
+}
+
+.sobre-imagen {
+    width: 45%;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blob-sobre {
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    background: #d8c7ff;
+
+    border-radius: 48% 52% 59% 41% / 42% 38% 62% 58%;
+
+    z-index: 1;
+}
+
+.sobre-imagen img {
+    width: 480px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+/* BOTONES */
+
+.botones-sobre {
+    margin-top: 50px;
+
+    display: flex;
+    gap: 40px;
+}
+
+.btn-lila,
+.btn-rosa {
+    text-decoration: none;
+
+    padding: 18px 45px;
+
+    border-radius: 15px;
+
+    font-size: 38px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn-lila {
+    background: #d8c7ff;
+    color: white;
+}
+
+.btn-rosa {
+    background: #ff7eb8;
+    color: white;
+}
+
+.btn-lila:hover,
+.btn-rosa:hover {
+    transform: scale(1.05);
+}
+.card-portafolio video{
+    width: 100%;
+    border-radius: 20px;
+}
+/* HABLEMOS */
+
+.hablemos {
+    width: 100%;
+    padding: 60px 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hablemos h1 {
+    font-size: 85px;
+    color: black;
+}
+
+.texto-hablemos {
+    margin-top: 20px;
+
+    font-size: 26px;
+    color: #42210B;
+
+    font-weight: 500;
+
+    max-width: 700px;
+
+    line-height: 1.5;
+}
+
+/* REDES */
+
+.redes-sociales {
+    margin-top: 40px;
+
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+
+    background: #ffb6c9;
+    color: black;
+
+    padding: 14px 28px;
+
+    border-radius: 14px;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.redes-sociales a:hover {
+    background: #ff7eb8;
+    color: white;
+
+    transform: scale(1.05);
+}
+
+/* ESTADO */
+
+.estado-comisiones {
+    margin-top: 40px;
+
+    background: white;
+
+    padding: 20px 35px;
+
+    border-radius: 18px;
+
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.08);
+}
+
+.estado-comisiones h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.abiertas {
+    font-size: 22px;
+    font-weight: 600;
+
+    color: #2f9b52;
+}
+
+/* FORMULARIO */
+
+.formulario-contacto {
+    margin-top: 50px;
+
+    width: 100%;
+    max-width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+
+    width: 100%;
+
+    padding: 18px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background: white;
+
+    font-size: 18px;
+
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.08);
+
+    outline: none;
+}
+
+.formulario-contacto textarea {
+    height: 180px;
+
+    resize: none;
+}
+
+.formulario-contacto button {
+
+    background: #ff7eb8;
+
+    color: white;
+
+    border: none;
+
+    padding: 18px;
+
+    border-radius: 18px;
+
+    font-size: 22px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.formulario-contacto button:hover {
+
+    background: #f56b2c;
+
+    transform: scale(1.03);
+}
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 1024px){
+
+    /* HERO */
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+
+        padding: 40px;
+    }
+
+    .hero-text,
+    .hero-image{
+        width: 100%;
+    }
+
+    .hero-text h1{
+        font-size: 65px;
+    }
+
+    .hero-text h2{
+        font-size: 50px;
+    }
+
+    .hero-text p{
+        font-size: 24px;
+    }
+
+    .linea{
+        display: none;
+    }
+
+    .hero-image img{
+        width: 380px;
+        margin-top: 40px;
+    }
+
+    .blob{
+        width: 300px;
+        height: 220px;
+    }
+
+    /* FEATURES */
+
+    .features{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    /* SOBRE MI */
+
+    .sobre-mi{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-texto,
+    .sobre-imagen{
+        width: 100%;
+    }
+
+    .sobre-texto h1{
+        font-size: 70px;
+    }
+
+    .sobre-texto p{
+        font-size: 20px;
+    }
+
+    .sobre-imagen img{
+        width: 350px;
+    }
+
+    .blob-sobre{
+        width: 320px;
+        height: 320px;
+    }
+
+    .botones-sobre{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* PORTAFOLIO */
+
+    .portafolio{
+        padding: 40px;
+    }
+
+    .card-portafolio{
+        width: 100%;
+        max-width: 400px;
+    }
+
+}
+
+/* ========================= */
+/* CELULARES */
+/* ========================= */
+
+@media (max-width: 768px){
+
+    /* NAVBAR */
+
+    header{
+        flex-direction: column;
+        gap: 20px;
+
+        padding: 25px;
+    }
+
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    nav a{
+        font-size: 16px;
+    }
+
+    /* HERO */
+
+    .hero{
+        padding: 20px;
+    }
+
+    .hero-text h1{
+        font-size: 48px;
+    }
+
+    .hero-text h2{
+        font-size: 38px;
+    }
+
+    .hero-text p{
+        font-size: 20px;
+    }
+
+    .hero-image img{
+        width: 280px;
+    }
+
+    .blob{
+        width: 230px;
+        height: 180px;
+    }
+
+    /* FEATURES */
+
+    .features{
+        padding: 40px 20px;
+    }
+
+    .feature h3{
+        font-size: 18px;
+    }
+
+    /* SOBRE MI */
+
+    .sobre-mi{
+        padding: 30px 25px;
+    }
+
+    .sobre-texto h1{
+        font-size: 52px;
+    }
+
+    .sobre-texto p{
+        font-size: 18px;
+    }
+
+    .sobre-imagen img{
+        width: 260px;
+    }
+
+    .blob-sobre{
+        width: 240px;
+        height: 240px;
+    }
+
+    .btn-lila,
+    .btn-rosa{
+        font-size: 24px;
+
+        padding: 14px 30px;
+    }
+
+    /* PORTAFOLIO */
+
+    .portafolio{
+        padding: 30px 20px;
+        gap: 40px;
+    }
+
+    .card-portafolio h2{
+        font-size: 24px;
+    }
+
+    .card-portafolio p{
+        font-size: 17px;
+    }
+
+    /* HABLEMOS */
+
+    .hablemos{
+        padding: 40px 20px;
+    }
+
+    .hablemos h1{
+        font-size: 55px;
+    }
+
+    .texto-hablemos{
+        font-size: 20px;
+    }
+
+    .redes-sociales{
+        gap: 15px;
+    }
+
+    .redes-sociales a{
+        font-size: 18px;
+        padding: 12px 22px;
+    }
+
+    .estado-comisiones{
+        width: 100%;
+    }
+
+    .formulario-contacto input,
+    .formulario-contacto textarea{
+        font-size: 16px;
+    }
+
+    .formulario-contacto button{
+        font-size: 18px;
+    }
+
+    /* COOKIES */
+
+    .cookie-banner{
+        flex-direction: column;
+        text-align: center;
+
+        padding: 20px;
+    }
+
+    .cookie-buttons{
+        width: 100%;
+
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}

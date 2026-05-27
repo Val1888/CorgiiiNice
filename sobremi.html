@@ -3,22 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CorgiiNice</title>
+    <title>Sobre Mi | CorgiiNice</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
+
 <body>
 
     <!-- NAVBAR -->
+
     <header>
+
         <div class="logo">
-            <img src="img/logobien.png" alt="Logo">
+            <img src="img/logobien.png" alt="">
         </div>
 
         <nav>
-    <a href="#" class="nav-link active">HOME</a>
-    <a href="#" class="nav-link">SOBRE MI</a>
-    <a href="#" class="nav-link">PORTAFOLIO</a>
-    <a href="#" class="nav-link">TIENDA</a>
-    <button>HABLEMOS</button>
-</nav>
-</header>
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="sobremi.html" class="nav-link active">SOBRE MI</a>
+            <a href="portafolio.html" class="nav-link">PORTAFOLIO</a>
+             <a href="hablemos.html" >
+            <button>HABLEMOS</button>
+            </a>
+        </nav>
+
+    </header>
+
+    <!-- SOBRE MI -->
+
+    <section class="sobre-mi">
+
+        <!-- TEXTO -->
+
+        <div class="sobre-texto">
+
+           <h1>
+                <span class="negro">CORGii</span><span class="rosa">NiCE</span>
+            </h1>
+
+
+            <p>
+                CorgiiNice es una marca personal dedicada a la creación de
+                animaciones 2D y 3D, ilustraciones digitales y diseño
+                para videojuegos.
+            </p>
+
+            <p>
+                Somos una identidad creativa que transforma ideas en
+                propuestas visuales dinámicas, expresivas y con personalidad
+                propia. A través de comisiones y proyectos personalizados,
+                ofrecemos soluciones visuales que combinan técnica,
+                creatividad y una estética amigable y reconocible.
+            </p>
+
+            <p>
+                Nuestro objetivo principal es brindar a cada cliente un
+                trabajo original, de calidad y con identidad, que comunique
+                su idea de forma clara y atractiva, manteniendo siempre
+                un estilo distintivo y profesional.
+            </p>
+
+            <div class="botones-sobre">
+
+                <a href="hablemos.html" class="btn-lila">
+                    HABLEMOS
+                </a>
+
+                <a href="portafolio.html" class="btn-rosa">
+                    PORTAFOLIO
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- IMAGEN -->
+
+        <div class="sobre-imagen">
+
+            <div class="blob-sobre"></div>
+
+            <img src="img/Asset 6.png" alt="">
+
+        </div>
+
+    </section>
+
+    <!-- COOKIES -->
+
+    <div class="cookie-banner" id="cookieBanner">
+
+        <div class="cookie-text">
+            <h3>Aviso de Privacidad y Cookies</h3>
+
+            <p>
+                Este sitio utiliza cookies para mejorar la experiencia
+                del usuario y proteger sus datos personales.
+            </p>
+        </div>
+
+        <div class="cookie-buttons">
+            <button class="btn-aceptar" onclick="aceptarCookies()">
+                Aceptar
+            </button>
+
+            <button class="btn-rechazar" onclick="cerrarCookies()">
+                Cerrar
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+
+        const links = document.querySelectorAll('.nav-link');
+
+        links.forEach(link => {
+            link.addEventListener('click', function () {
+                links.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        function aceptarCookies() {
+            localStorage.setItem("cookiesAceptadas", "true");
+            document.getElementById("cookieBanner").style.display = "none";
+        }
+
+        function cerrarCookies() {
+            document.getElementById("cookieBanner").style.display = "none";
+        }
+
+        window.onload = function() {
+            if(localStorage.getItem("cookiesAceptadas") === "true") {
+                document.getElementById("cookieBanner").style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+</html>

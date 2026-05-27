@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hablemos | CorgiiNice</title>
+
+    <link rel="stylesheet" href="style/estilo.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <div class="logo">
+            <img src="img/logobien.png" alt="">
+        </div>
+
+        <nav>
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="sobremi.html" class="nav-link">SOBRE MI</a>
+            <a href="portafolio.html" class="nav-link">PORTAFOLIO</a>
+            <a href="hablemos.html" class="nav-link active">HABLEMOS</a>
+        </nav>
+
+    </header>
+
+    <!-- HABLEMOS -->
+
+    <section class="hablemos">
+
+        <h1>Hablemos ✨</h1>
+
+        <p class="texto-hablemos">
+            ¿Tienes una idea, proyecto o comisión?
+            Me encantaría trabajar contigo 💛
+        </p>
+
+        <!-- REDES -->
+
+        <div class="redes-sociales">
+
+            <a href="https://x.com/CorgiiiNice">
+                Twitter
+            </a>
+
+            <a href="https://www.tiktok.com/@corgiinice">
+                TikTok
+            </a>
+
+            <a href="https://www.behance.net/pitikitacorgi">
+                Behance
+            </a>
+
+            <a href="#">
+                Correo
+            </a>
+
+        </div>
+
+        <!-- ESTADO -->
+
+        <div class="estado-comisiones">
+
+            <h3>Comisiones:</h3>
+
+            <p class="abiertas">
+                🟢 Abiertas
+            </p>
+
+        </div>
+
+        <!-- FORMULARIO -->
+
+        <form class="formulario-contacto">
+
+            <input type="text" placeholder="Nombre">
+
+            <input type="email" placeholder="Correo electrónico">
+
+            <textarea 
+                placeholder="Cuéntame sobre tu proyecto">
+            </textarea>
+
+            <button type="submit">
+                Enviar mensaje
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- COOKIES -->
+
+    <div class="cookie-banner" id="cookieBanner">
+
+        <div class="cookie-text">
+
+            <h3>Aviso de Privacidad y Cookies</h3>
+
+            <p>
+                Este sitio utiliza cookies para mejorar la experiencia
+                del usuario y proteger sus datos personales.
+            </p>
+
+        </div>
+
+        <div class="cookie-buttons">
+
+            <button class="btn-aceptar" onclick="aceptarCookies()">
+                Aceptar
+            </button>
+
+            <button class="btn-rechazar" onclick="cerrarCookies()">
+                Cerrar
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPT -->
+
+    <script>
+
+        const links = document.querySelectorAll('.nav-link');
+
+        links.forEach(link => {
+
+            link.addEventListener('click', function () {
+
+                links.forEach(l => l.classList.remove('active'));
+
+                this.classList.add('active');
+
+            });
+
+        });
+
+        function aceptarCookies() {
+
+            localStorage.setItem("cookiesAceptadas", "true");
+
+            document.getElementById("cookieBanner").style.display = "none";
+
+        }
+
+        function cerrarCookies() {
+
+            document.getElementById("cookieBanner").style.display = "none";
+
+        }
+
+        window.onload = function() {
+
+            if(localStorage.getItem("cookiesAceptadas") === "true") {
+
+                document.getElementById("cookieBanner").style.display = "none";
+
+            }
+
+        }
+
+        // FORMULARIO SIMULADO
+
+        document.querySelector(".formulario-contacto")
+        .addEventListener("submit", function(e){
+
+            e.preventDefault();
+
+            alert("¡Mensaje enviado correctamente! ✨");
+
+        });
+
+    </script>
+
+</body>
+</html>
